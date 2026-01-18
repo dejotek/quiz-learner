@@ -68,3 +68,43 @@ Backend
 * CORS + podstawowe zabezpieczenia (opcjonalnie: helmet, rate limit)
  
 ---
+
+## Funkcjonalności / moduły systemu
+ 
+Frontend
+ 
+* Moduł quizów
+ 
+  * lista quizów
+  * rozpoczęcie quizu
+  * przebieg quizu
+  * wynik końcowy
+ 
+* Moduł pytań
+ 
+  * wyświetlanie treści pytania
+  * obsługa wyboru odpowiedzi
+ 
+* Moduł nawigacji
+ 
+  * routing pomiędzy widokami
+ 
+Backend (NestJS)
+ 
+* Moduł Quizzes
+ 
+  * lista quizów
+  * szczegóły quizu
+ 
+* Moduł Results
+ 
+  * zapis wyniku
+  * historia wyników
+ 
+W przyszłości
+ 
+* moduł Auth (rejestracja/logowanie)
+* moduł Users/Profile
+* statystyki i rankingi
+ 
+---
