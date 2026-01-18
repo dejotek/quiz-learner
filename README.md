@@ -123,3 +123,24 @@ W przyszłości
 10. Frontend wyświetla podsumowanie
 
 ---
+
+## Architektura systemu
+
+System jest podzielony na frontend i backend.
+
+Frontend (React SPA)
+
+* Warstwa prezentacji: Pages + Components
+* Warstwa logiki: hooki, store
+* Warstwa danych: services (klient API), storage
+
+Backend (NestJS)
+
+* Controllers: routing HTTP, walidacja na wejściu, kody odpowiedzi
+* Services: logika domenowa (quizy, wyniki)
+* Repositories: dostęp do danych (baza lub pamięć/mocks)
+* DTO: kontrakty i walidacja
+
+<img width="592" height="892" alt="schemat IO" src="https://github.com/user-attachments/assets/9cd2ae0c-ded0-414b-93e5-73c4f97f828d" />
+
+---
