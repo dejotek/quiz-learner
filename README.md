@@ -65,7 +65,7 @@ Backend
  
 * Stabilne czasy odpowiedzi API
 * Gotowość pod paginację w listach
-* CORS + podstawowe zabezpieczenia (opcjonalnie: helmet, rate limit)
+* CORS + podstawowe zabezpieczenia (helmet, rate limit)
  
 ---
 
@@ -159,7 +159,7 @@ Backend
 * NestJS
 * TypeScript
 * class-validator / class-transformer
-* (opcjonalnie) Prisma lub TypeORM + PostgreSQL
+* Prisma lub TypeORM + PostgreSQL
 
 Narzędzia
 
@@ -170,7 +170,7 @@ Narzędzia
 
 ## Proces uruchomienia projektu
 
-Przykład dla repozytorium typu monorepo:
+Foldery zawierające projekt (front i backend)
 
 ```
 /frontend
