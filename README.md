@@ -108,3 +108,18 @@ W przyszłości
 * statystyki i rankingi
  
 ---
+
+## Przypadki użycia
+
+1. Użytkownik wchodzi na stronę główną
+2. Użytkownik przegląda listę quizów (frontend pobiera dane z API)
+3. Użytkownik wybiera quiz
+4. Frontend pobiera szczegóły quizu (pytania + odpowiedzi) z backendu
+5. System wyświetla kolejne pytania
+6. Użytkownik zaznacza odpowiedzi
+7. Frontend mierzy czas i (opcjonalnie) zapisuje postęp lokalnie
+8. Po zakończeniu quizu frontend wysyła wynik do backendu
+9. Backend zapisuje wynik i odsyła potwierdzenie
+10. Frontend wyświetla podsumowanie
+
+---
