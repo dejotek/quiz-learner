@@ -144,3 +144,25 @@ Backend (NestJS)
 <img width="592" height="892" alt="schemat IO" src="https://github.com/user-attachments/assets/9cd2ae0c-ded0-414b-93e5-73c4f97f828d" />
 
 ---
+
+## Stos technologiczny
+
+Frontend
+
+* React
+* TypeScript
+* React Router
+* CSS / CSS Modules
+
+Backend
+
+* NestJS
+* TypeScript
+* class-validator / class-transformer
+* (opcjonalnie) Prisma lub TypeORM + PostgreSQL
+
+Narzędzia
+
+* Node.js
+* npm
+
