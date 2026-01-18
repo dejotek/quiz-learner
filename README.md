@@ -166,3 +166,67 @@ Narzędzia
 * Node.js
 * npm
 
+---
+
+## Proces uruchomienia projektu
+
+Przykład dla repozytorium typu monorepo:
+
+```
+/frontend
+/backend
+```
+
+Backend
+
+1. Folder backend
+
+```
+cd backend
+```
+
+2. Instalacja zależności
+
+```
+npm install
+```
+
+3. Uruchomienie
+
+```
+npm run start:dev
+```
+
+Przykładowy adres API:
+
+```
+http://localhost:3001/api/v1
+```
+
+Frontend
+
+1. Folder frontend
+
+```
+cd frontend
+```
+
+2. Instalacja zależności
+
+```
+npm install
+```
+
+3. Uruchomienie
+
+```
+npm start
+```
+
+Adres:
+
+```
+http://localhost:3000
+```
+
+---
