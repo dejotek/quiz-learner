@@ -255,3 +255,63 @@ frontend/
   ├── index.tsx           # punkt wejścia aplikacji
   └── index.css           # style globalne
 ```
+
+
+### Backend (NestJS)
+
+Podejście feature-based, podobnie jak na froncie: każdy moduł trzyma kontroler, serwis, DTO i warstwę danych.
+
+```
+backend/
+  src/
+  │
+  ├── app.module.ts
+  ├── main.ts
+  │
+  ├── config/                 # konfiguracja (env, cors, swagger itp.)
+  │   ├── env.ts
+  │   └── cors.ts
+  │
+  ├── common/                 # współdzielone elementy
+  │   ├── filters/            # globalne filtry wyjątków
+  │   ├── guards/             # auth/role guards (docelowo)
+  │   ├── interceptors/       # np. logging/transform
+  │   ├── pipes/              # np. validation pipe
+  │   └── utils/
+  │
+  ├── modules/
+  │   ├── quizzes/
+  │   │   ├── quizzes.module.ts
+  │   │   ├── quizzes.controller.ts
+  │   │   ├── quizzes.service.ts
+  │   │   ├── dto/
+  │   │   │   ├── list-quizzes.dto.ts
+  │   │   │   └── get-quiz.dto.ts
+  │   │   ├── entities/
+  │   │   │   ├── quiz.entity.ts
+  │   │   │   └── question.entity.ts
+  │   │   └── repositories/
+  │   │       ├── quizzes.repository.ts
+  │   │       └── quizzes.memory.repository.ts   # wersja in-memory/mock
+  │   │
+  │   ├── results/
+  │   │   ├── results.module.ts
+  │   │   ├── results.controller.ts
+  │   │   ├── results.service.ts
+  │   │   ├── dto/
+  │   │   │   ├── create-result.dto.ts
+  │   │   │   └── list-results.dto.ts
+  │   │   ├── entities/
+  │   │   │   └── result.entity.ts
+  │   │   └── repositories/
+  │   │       ├── results.repository.ts
+  │   │       └── results.memory.repository.ts
+  │   │
+  │   └── health/
+  │       ├── health.module.ts
+  │       └── health.controller.ts              # GET /health
+  │
+  └── database/               # Prisma/TypeORM, migracje
+      ├── prisma/
+      └── migrations/
+```
