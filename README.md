@@ -315,3 +315,12 @@ backend/
       ├── prisma/
       └── migrations/
 ```
+
+Przykładowe endpointy
+
+* GET /api/v1/quizzes
+* GET /api/v1/quizzes/:id
+* POST /api/v1/results
+* GET /api/v1/results
+* GET /health
+```
