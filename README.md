@@ -230,3 +230,28 @@ http://localhost:3000
 ```
 
 ---
+
+
+## Struktura folderów
+
+### Frontend (React + TS)
+
+```
+frontend/
+  src/
+  │
+  ├── app/                # konfiguracja aplikacji i routing
+  ├── assets/             # zasoby statyczne (obrazy, style)
+  ├── components/         # współdzielone komponenty UI
+  ├── features/           # moduły funkcjonalne aplikacji
+  │   ├── quizzes/
+  │   ├── questions/
+  │   └── auth/
+  ├── hooks/              # własne hooki React
+  ├── services/           # komunikacja z API / storage
+  ├── store/              # globalny stan aplikacji
+  ├── utils/              # funkcje pomocnicze
+  ├── types/              # wspólne typy TypeScript
+  ├── index.tsx           # punkt wejścia aplikacji
+  └── index.css           # style globalne
+```
